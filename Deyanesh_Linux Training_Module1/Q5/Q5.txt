@@ -1,0 +1,29 @@
+deyanesh@deyanesh:~/module1/Q5$ mkdir dir1
+deyanesh@deyanesh:~/module1/Q5$ touch dir1/file1
+deyanesh@deyanesh:~/module1/Q5$ echo "How are you? " > dir1/file2
+deyanesh@deyanesh:~/module1/Q5$ ls dir1
+file1  file2
+deyanesh@deyanesh:~/module1/Q5$ echo "I am doing good.Thanks for asking ">dir1/file3
+deyanesh@deyanesh:~/module1/Q5$ touch dir1/file_list
+deyanesh@deyanesh:~/module1/Q5$ ls -lt dir1 > dir1/file_list
+deyanesh@deyanesh:~/module1/Q5$ cat dir1/file_list
+total 8
+-rw-rw-r-- 1 deyanesh deyanesh  0 Feb  3 11:13 file_list
+-rw-rw-r-- 1 deyanesh deyanesh 35 Feb  3 11:12 file3
+-rw-rw-r-- 1 deyanesh deyanesh 14 Feb  3 11:11 file2
+-rw-rw-r-- 1 deyanesh deyanesh  0 Feb  3 11:11 file1
+deyanesh@deyanesh:~/module1/Q5$ ls -ltr dir1 >> dir1/file_list
+deyanesh@deyanesh:~/module1/Q5$ cat file_list
+cat: file_list: No such file or directory
+deyanesh@deyanesh:~/module1/Q5$ cat dir1/file_list
+total 8
+-rw-rw-r-- 1 deyanesh deyanesh  0 Feb  3 11:13 file_list
+-rw-rw-r-- 1 deyanesh deyanesh 35 Feb  3 11:12 file3
+-rw-rw-r-- 1 deyanesh deyanesh 14 Feb  3 11:11 file2
+-rw-rw-r-- 1 deyanesh deyanesh  0 Feb  3 11:11 file1
+total 12
+-rw-rw-r-- 1 deyanesh deyanesh   0 Feb  3 11:11 file1
+-rw-rw-r-- 1 deyanesh deyanesh  14 Feb  3 11:11 file2
+-rw-rw-r-- 1 deyanesh deyanesh  35 Feb  3 11:12 file3
+-rw-rw-r-- 1 deyanesh deyanesh 224 Feb  3 11:13 file_list
+
