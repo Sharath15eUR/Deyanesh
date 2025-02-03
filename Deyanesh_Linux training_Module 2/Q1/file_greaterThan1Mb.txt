@@ -1,2 +1,0 @@
-./file_2mb.txt
-./file_3mb.txt
