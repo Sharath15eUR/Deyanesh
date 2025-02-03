@@ -1,0 +1,13 @@
+deyanesh@deyanesh:~/module2/Q2$ cat config.txt
+localhost
+localhost1
+localhost is down
+127.0.1.2
+deyanesh@deyanesh:~/module2/Q2$ sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+deyanesh@deyanesh:~/module2/Q2$ cat updated_config.txt
+127.0.0.1
+127.0.0.11
+127.0.0.1 is down
+127.0.1.2
+deyanesh@deyanesh:~/module2/Q2$ 
+

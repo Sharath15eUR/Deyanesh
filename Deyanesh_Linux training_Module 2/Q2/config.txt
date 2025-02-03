@@ -1,0 +1,4 @@
+localhost
+localhost1
+localhost is down
+127.0.1.2
