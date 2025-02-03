@@ -1,0 +1,12 @@
+deyanesh@deyanesh:~/module1/Q1$ touch file_permission
+deyanesh@deyanesh:~/module1/Q1$ ls
+file_permission
+deyanesh@deyanesh:~/module1/Q1$ ls -l
+total 0
+-rw-rw-r-- 1 deyanesh deyanesh 0 Feb  3 09:49 file_permission
+deyanesh@deyanesh:~/module1/Q1$ chmod a+x file_permission
+deyanesh@deyanesh:~/module1/Q1$ ls -l
+total 0
+-rwxrwxr-x 1 deyanesh deyanesh 0 Feb  3 09:49 file_permission
+deyanesh@deyanesh:~/module1/Q1$ 
+
