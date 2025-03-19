@@ -1,0 +1,23 @@
+14:40:07.758133 IP deyanesh.39158 > _gateway.domain: 9460+ A? contile.services.mozilla.com. (46)
+14:40:07.762014 IP deyanesh.56549 > _gateway.domain: 51355+ HTTPS? contile.services.mozilla.com. (46)
+14:40:07.770143 IP deyanesh.47787 > _gateway.domain: 48250+ A? firefox-api-proxy.cdn.mozilla.net. (51)
+14:40:07.770856 IP deyanesh.55540 > _gateway.domain: 12339+ HTTPS? firefox-api-proxy.cdn.mozilla.net. (51)
+14:40:08.013441 IP _gateway.domain > deyanesh.39158: 9460 1/0/0 A 34.117.188.166 (62)
+14:40:08.013444 IP _gateway.domain > deyanesh.56549: 51355 0/1/0 (127)
+14:40:08.013445 IP _gateway.domain > deyanesh.55540: 12339 1/1/0 CNAME firefox-api-proxy-prod.pocket.prod.cloudops.mozgcp.net. (209)
+14:40:08.020096 IP deyanesh.60655 > _gateway.domain: 41798+ HTTPS? firefox-api-proxy-prod.pocket.prod.cloudops.mozgcp.net. (72)
+14:40:08.021043 IP deyanesh.37308 > _gateway.domain: 30566+ AAAA? contile.services.mozilla.com. (46)
+14:40:08.049565 IP _gateway.domain > deyanesh.47787: 48250 2/0/0 CNAME firefox-api-proxy-prod.pocket.prod.cloudops.mozgcp.net., A 34.149.97.1 (132)
+14:40:08.054975 IP _gateway.domain > deyanesh.37308: 30566 0/1/0 (127)
+14:40:08.054975 IP _gateway.domain > deyanesh.60655: 41798 0/1/0 (165)
+14:40:08.058177 IP deyanesh.45988 > _gateway.domain: 56127+ AAAA? firefox-api-proxy-prod.pocket.prod.cloudops.mozgcp.net. (72)
+14:40:08.127995 IP deyanesh.58819 > 166.188.117.34.bc.googleusercontent.com.https: UDP, length 1357
+14:40:08.185793 IP _gateway.domain > deyanesh.45988: 56127 1/0/0 AAAA 2600:1901:0:74e4:: (100)
+14:40:08.205840 IP deyanesh.50853 > _gateway.domain: 17730+ PTR? 12.253.168.192.in-addr.arpa. (45)
+14:40:08.209498 IP 166.188.117.34.bc.googleusercontent.com.https > deyanesh.58819: UDP, length 1357
+14:40:08.209500 IP 166.188.117.34.bc.googleusercontent.com.https > deyanesh.58819: UDP, length 1357
+14:40:08.225271 IP _gateway.domain > deyanesh.50853: 17730 NXDomain 0/0/0 (45)
+14:40:08.241986 IP deyanesh.37857 > _gateway.domain: 33696+ PTR? 1.253.168.192.in-addr.arpa. (44)
+14:40:08.243770 IP deyanesh.58819 > 166.188.117.34.bc.googleusercontent.com.https: UDP, length 1357
+14:40:08.244123 IP6 deyanesh.44912 > 2600:1901:0:74e4::.https: UDP, length 1337
+

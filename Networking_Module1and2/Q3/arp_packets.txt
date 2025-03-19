@@ -1,0 +1,9 @@
+14:19:42.097338 ARP, Request who-has 192.168.253.74 tell _gateway, length 46
+14:19:53.956757 ARP, Request who-has deyanesh tell _gateway, length 46
+14:19:53.956778 ARP, Reply deyanesh is-at 08:00:27:94:db:62 (oui Unknown), length 28
+14:19:54.111501 ARP, Request who-has _gateway tell deyanesh, length 28
+14:19:54.118205 ARP, Reply _gateway is-at 92:b1:71:ac:62:0b (oui Unknown), length 46
+14:20:09.016069 ARP, Request who-has 192.168.253.74 tell _gateway, length 46
+14:20:14.642395 ARP, Request who-has deyanesh tell _gateway, length 46
+14:20:14.642411 ARP, Reply deyanesh is-at 08:00:27:94:db:62 (oui Unknown), length 28
+
