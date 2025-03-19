@@ -1,0 +1,26 @@
+Network Connectivity Issues
+
+If two devices have the same IP, only one may communicate properly while the other experiences intermittent connectivity or is disconnected.
+If both devices actively send data, the network may experience packet collisions or random disconnections.
+
+ARP TABLE
+
+
+In IPv4, devices use the Address Resolution Protocol (ARP) to map IP addresses to MAC addresses.
+When a duplicate IP exists, different devices respond to ARP requests with different MAC addresses, leading to constant ARP table updates and confusion in network switches and routers.
+
+
+Security Risks 
+
+Attackers can exploit IP conflicts by assigning their device the same IP as a gateway or server.
+This can intercept sensitive data (Man-in-the-Middle attack) or disrupt legitimate traffic.
+
+
+TO FIND DUPLICATE IP
+find tht duplicate ip using arp -a....two mac address wil have same ip
+arp -a | grep "<conflicting-IP>"
+
+TO RESOLVE
+
+sudo dhclient -r
+sudo dhclient
