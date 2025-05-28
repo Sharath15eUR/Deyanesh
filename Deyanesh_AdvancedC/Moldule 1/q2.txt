@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+void rearrangeEvenOdd(int *arr, int n) {
+    int *read = arr;               // Pointer to read current element
+    int *write = arr;              // Pointer to next position to place even number
+
+    for (int i = 0; i < n; i++) {
+        // If current element is even, we need to move it to 'write' position if needed
+        if (*read % 2 == 0) {
+            int even_val = *read;
+
+            // Shift elements from write to read-1 one position to the right
+            int *shift_ptr = read;
+            while (shift_ptr > write) {
+                *shift_ptr = *(shift_ptr - 1);
+                shift_ptr--;
+            }
+
+            // Place even value at 'write'
+            *write = even_val;
+
+            // Move write pointer forward
+            write++;
+        }
+        read++;
+    }
+}
+int main() {
+    int arr[] = {1, 2, 4, 3, 6, 7, 8};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    rearrangeEvenOdd(arr, n);
+
+    // Print result
+    for (int i = 0; i < n; i++) {
+        printf("%d ", *(arr + i)); 
+    }
+    printf("\n");
+
+    return 0;
+}

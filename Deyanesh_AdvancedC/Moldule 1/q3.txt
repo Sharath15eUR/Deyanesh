@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int searchMatrix(int matrix[10][10], int n, int key) {
+    int row = 0;
+    int col = n - 1;  // start at top-right
+
+    while (row < n && col >= 0) {
+        if (matrix[row][col] == key) {
+            return 1; // found
+        } else if (matrix[row][col] > key) {
+            col--; // move left
+        } else {
+            row++; // move down
+        }
+    }
+
+    return 0; // not found
+}
+int main() {
+    int matrix[10][10] = {
+        {10, 20, 30, 40},
+        {15, 25, 35, 45},
+        {27, 29, 37, 48},
+        {32, 33, 39, 50}
+    };
+
+    int key = 20;
+    int size = 4;
+
+    if (searchMatrix(matrix, size, key)) {
+        printf("Key %d found in matrix.\n", key);
+    } else {
+        printf("Key %d not found in matrix.\n", key);
+    }
+
+    return 0;
+}
